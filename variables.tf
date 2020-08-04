@@ -72,7 +72,7 @@ variable "backup_window" {
   default = null
 }
 
-variable "delete_automated_bacups" {
+variable "delete_automated_backups" {
   type = bool
   description = "Whether to delete automated snapshots when deleting the database"
   default = false
