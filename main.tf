@@ -67,7 +67,7 @@ resource "aws_db_instance" "db_instance" {
   username                        = var.username
   vpc_security_group_ids          = [aws_security_group.security_group.id]
   performance_insights_enabled    = var.performance_insights_enabled
-  tags                            = var.tags 
+  tags                            = var.tags
 }
 
 resource "aws_db_instance" "db_instance_replica" {
