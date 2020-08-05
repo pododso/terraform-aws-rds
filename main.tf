@@ -16,7 +16,7 @@ resource "aws_security_group_rule" "egress_allow_all" {
 }
 
 resource "aws_db_parameter_group" "db_parameter_group" {
-  name   = "${var.name}-db-parameter-group"
+  name   = "${var.name}-parameter-group"
   family = var.family
   tags   = var.tags
 
