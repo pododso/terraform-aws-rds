@@ -22,7 +22,7 @@ variable "vpc_id" {
 
 variable "family" {
   type        = string
-  description = "Engine family of the instance"
+  description = "Parameter group engine family of the instance"
 }
 
 variable "parameters" {
@@ -61,7 +61,7 @@ variable "apply_immediately" {
 }
 
 variable "backup_retention_period" {
-  type        = string
+  type        = number
   description = "Number of days to retain instance snapshots"
   default     = null
 }
@@ -100,7 +100,7 @@ variable "instance_class" {
 }
 
 variable "iops" {
-  type        = string
+  type        = number
   description = "IOPS count to be used if storage_type is set to 'io1'"
   default     = null
 }
@@ -135,7 +135,7 @@ variable "password" {
 }
 
 variable "port" {
-  type        = string
+  type        = number
   description = "Port to be used by the instance/s"
   default     = null
 }
@@ -147,7 +147,7 @@ variable "snapshot_identifier" {
 }
 
 variable "storage_encrypted" {
-  type        = string
+  type        = bool
   description = "Whether to apply encryption-at-rest to the database storage"
   default     = true
 }
